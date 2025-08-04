@@ -135,7 +135,7 @@ if (num > 0){
   console.log('num is greater than 0');
 } else if (num < 0){
   console.log('num is less than 0');
-}else if (num === 0){
+}else {
   console.log('num is 0');
 }
 
@@ -152,12 +152,10 @@ let mixed = [4, '2', 5, '8', '9', 0, 1];
 
 for (let item of mixed) {
   if (typeof item === 'number') {
-    if (item % 2 === 0) {
-      console.log('even');
-    } else {
-      console.log('odd');
-    }
-  } else {
     console.log('not number');
+  }else if (item % 2 === 0){
+    console.log('even');
+  }else{
+    console.log('odd');
   }
 }
